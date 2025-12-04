@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Campus - Sélectionner une date</title>
+    <!-- Inclure le script CDN de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-bold">E</div>
+                <span class="text-blue-600 font-bold text-lg">E-CAMPUS</span>
+            </div>
+            <nav class="hidden md:flex gap-8">
+                <a href="C:\Users\21693\Downloads\integration web\gitmainn\besoin3\fiabilite-confiance.html" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition">Dashboard</a>
+                <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition">Documents</a>
+<a href="C:\Users\21693\Downloads\integration web\gitmainn\besoin2\feed.html" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition">Forum</a> 
+                <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition">À propos</a>
+            </nav>
+            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center cursor-pointer text-lg">👤</div>
+        </div>
+    </header>
+
+
+ <!--  Main Content  -->
+  <!-- MAIN CONTENT -->
+    <main class="max-w-7xl mx-auto px-10 py-10">
+        <div class="mb-10">
+            <h1 class="text-4xl font-bold text-gray-800 mb-3">📊 Statistiques de Sécurité</h1>
+            <p class="text-gray-500">Analyse détaillée de l'activité et du niveau de sécurité de votre compte</p>
+        </div>
+
+        <!-- PERIOD SELECTOR -->
+        <div class="bg-white p-5 rounded-xl shadow-md mb-8 flex justify-between items-center flex-wrap gap-4">
+            <div class="flex gap-3">
+                <button class="px-5 py-2 border-2 border-gray-300 bg-white rounded-lg text-sm font-semibold text-gray-500 hover:border-blue-600 hover:text-blue-600 transition">7 Jours</button>
+                <button class="px-5 py-2 bg-blue-600 text-white rounded-lg text-sm font-semibold">30 Jours</button>
+                <button class="px-5 py-2 border-2 border-gray-300 bg-white rounded-lg text-sm font-semibold text-gray-500 hover:border-blue-600 hover:text-blue-600 transition">90 Jours</button>
+                <button class="px-5 py-2 border-2 border-gray-300 bg-white rounded-lg text-sm font-semibold text-gray-500 hover:border-blue-600 hover:text-blue-600 transition">1 An</button>
+            </div>
+            <div class="text-sm text-gray-500 font-semibold">📅 Période: 16 Oct 2025 - 16 Nov 2025</div>
+        </div>
+
+        <!-- STATS OVERVIEW -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-green-500 hover:-translate-y-2 transition-transform">
+                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-2xl mb-4">✅</div>
+                <div class="text-4xl font-bold text-gray-800 mb-1">127</div>
+                <div class="text-sm text-gray-500 font-medium">Connexions Réussies</div>
+                <div class="text-xs text-green-600 mt-3 flex items-center gap-1">↗ +12% vs période précédente</div>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-red-500 hover:-translate-y-2 transition-transform">
+                <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center text-2xl mb-4">❌</div>
+                <div class="text-4xl font-bold text-gray-800 mb-1">3</div>
+                <div class="text-sm text-gray-500 font-medium">Tentatives Échouées</div>
+                <div class="text-xs text-red-600 mt-3 flex items-center gap-1">↘ -50% vs période précédente</div>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-yellow-500 hover:-translate-y-2 transition-transform">
+                <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center text-2xl mb-4">⚠️</div>
+                <div class="text-4xl font-bold text-gray-800 mb-1">2</div>
+                <div class="text-sm text-gray-500 font-medium">Alertes de Sécurité</div>
+                <div class="text-xs text-red-600 mt-3 flex items-center gap-1">↘ -33% vs période précédente</div>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-cyan-500 hover:-translate-y-2 transition-transform">
+                <div class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center text-2xl mb-4">📱</div>
+                <div class="text-4xl font-bold text-gray-800 mb-1">4</div>
+                <div class="text-sm text-gray-500 font-medium">Appareils Utilisés</div>
+                <div class="text-xs text-gray-500 mt-3">= Stable</div>
+            </div>
+        </div>
+
+        <!-- CONNEXIONS PAR JOUR -->
+        <div class="bg-white p-9 rounded-2xl shadow-lg mb-8">
+            <div class="flex justify-between items-center mb-8 pb-5 border-b-2 border-gray-100">
+                <div class="text-xl font-semibold text-gray-800">📈 Connexions par Jour (30 derniers jours)</div>
+                <div class="flex gap-5 text-xs">
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-3 bg-blue-600 rounded"></div>
+                        <span>Connexions réussies</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-3 bg-red-500 rounded"></div>
+                        <span>Tentatives échouées</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-end gap-4 h-64 my-8">
+                <div class="flex-1 bg-gradient-to-t from-blue-700 to-blue-600 rounded-t-lg relative cursor-pointer hover:opacity-80 transition" style="height: 45%;">
+                    <span class="absolute -top-6 left-1/2 -translate-x-1/2 text-xs font-semibold">3</span>
+                    <span class="absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs text-gray-500 whitespace-nowrap">Lun</span>
+                </div>
+                <div class="flex-1 bg-gradient-to-t from-blue-700 to-blue-600 rounded-t-lg relative cursor-pointer hover:opacity-80 transition" style="height: 70%;">
+                    <span class="absolute -top-6 left-1/2 -translate-x-1/2 text-xs font-semibold">5</span>
+                    <span class="absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs text-gray-500 whitespace-nowrap">Mar</span>
+                </div>
+                <div class="flex-1 bg-gradient-to-t from-blue-700 to-blue-600 rounded-t-lg relative cursor-pointer hover:opacity-80 transition" style="height: 85%;">
+                    <span class="absolute -top-6 left-1/2 -translate-x-1/2 text-xs font-semibold">6</span>
+                    <span class="absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs text-gray-500 whitespace-nowrap">Mer</span>
+                </div>
+                <div class="flex-1 bg-gradient-to-t from-blue-700 to-blue-600 rounded-t-lg relative cursor-pointer hover:opacity-80 transition" style="height: 60%;">
+                    <span class="absolute -top-6 left-1/2 -translate-x-1/2 text-xs font-semibold">4</span>
+                    <span class="absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs text-gray-500 whitespace-nowrap">Jeu</span>
+                </div>
+                <div class="flex-1 bg-gradient-to-t from-blue-700 to-blue-600 rounded-t-lg relative cursor-pointer hover:opacity-80 transition" style="height: 100%;">
+                    <span class="absolute -top-6 left-1/2 -translate-x-1/2 text-xs font-semibold">7</span>
+                    <span class="absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs text-gray-500 whitespace-nowrap">Ven</span>
+                </div>
+                <div class="flex-1 bg-gradient-to-t from-blue-700 to-blue-600 rounded-t-lg relative cursor-pointer hover:opacity-80 transition" style="height: 30%;">
+                    <span class="absolute -top-6 left-1/2 -translate-x-1/2 text-xs font-semibold">2</span>
+                    <span class="absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs text-gray-500 whitespace-nowrap">Sam</span>
+                </div>
+                <div class="flex-1 bg-gradient-to-t from-blue-700 to-blue-600 rounded-t-lg relative cursor-pointer hover:opacity-80 transition" style="height: 20%;">
+                    <span class="absolute -top-6 left-1/2 -translate-x-1/2 text-xs font-semibold">1</span>
+                    <span class="absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs text-gray-500 whitespace-nowrap">Dim</span>
+                </div>
+            </div>
+
+            <div class="text-center text-gray-500 text-sm mt-12">
+                📊 Pic d'activité: Vendredi avec 7 connexions | 🕐 Heure favorite: 14h-16h
+            </div>
+        </div>
+
+        <!-- TWO COLUMNS LAYOUT -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <!-- DEVICES STATS -->
+            <div class="bg-white p-9 rounded-2xl shadow-lg">
+                <div class="flex justify-between items-center mb-8 pb-5 border-b-2 border-gray-100">
+                    <div class="text-xl font-semibold text-gray-800">💻 Appareils Utilisés</div>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-4 p-5 bg-gray-50 rounded-xl hover:bg-white hover:shadow-lg transition">
+                        <div class="text-3xl">💻</div>
+                        <div class="flex-1">
+                            <div class="font-semibold text-gray-800 mb-1">Windows - Chrome</div>
+                            <div class="text-xs text-gray-500">85 connexions • Dernière: Aujourd'hui 14:35</div>
+                            <div class="w-full h-2 bg-gray-200 rounded-full mt-2">
+                                <div class="h-full bg-gradient-to-r from-blue-600 to-blue-700 rounded-full transition-all duration-1000" style="width: 67%;"></div>
+                            </div>
+                        </div>
+                        <div class="text-2xl font-bold text-blue-600">67%</div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-5 bg-gray-50 rounded-xl hover:bg-white hover:shadow-lg transition">
+                        <div class="text-3xl">📱</div>
+                        <div class="flex-1">
+                            <div class="font-semibold text-gray-800 mb-1">iPhone - Safari</div>
+                            <div class="text-xs text-gray-500">32 connexions • Dernière: Hier 18:22</div>
+                            <div class="w-full h-2 bg-gray-200 rounded-full mt-2">
+                                <div class="h-full bg-gradient-to-r from-blue-600 to-blue-700 rounded-full transition-all duration-1000" style="width: 25%;"></div>
+                            </div>
+                        </div>
+                        <div class="text-2xl font-bold text-blue-600">25%</div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-5 bg-gray-50 rounded-xl hover:bg-white hover:shadow-lg transition">
+                        <div class="text-3xl">💻</div>
+                        <div class="flex-1">
+                            <div class="font-semibold text-gray-800 mb-1">MacBook - Safari</div>
+                            <div class="text-xs text-gray-500">8 connexions • Dernière: Il y a 3 jours</div>
+                            <div class="w-full h-2 bg-gray-200 rounded-full mt-2">
+                                <div class="h-full bg-gradient-to-r from-blue-600 to-blue-700 rounded-full transition-all duration-1000" style="width: 6%;"></div>
+                            </div>
+                        </div>
+                        <div class="text-2xl font-bold text-blue-600">6%</div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-5 bg-gray-50 rounded-xl hover:bg-white hover:shadow-lg transition">
+                        <div class="text-3xl">📱</div>
+                        <div class="flex-1">
+                            <div class="font-semibold text-gray-800 mb-1">Android - Chrome</div>
+                            <div class="text-xs text-gray-500">2 connexions • Dernière: Il y a 2 semaines</div>
+                            <div class="w-full h-2 bg-gray-200 rounded-full mt-2">
+                                <div class="h-full bg-gradient-to-r from-blue-600 to-blue-700 rounded-full transition-all duration-1000" style="width: 2%;"></div>
+                            </div>
+                        </div>
+                        <div class="text-2xl font-bold text-blue-600">2%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECURITY SCORE BREAKDOWN -->
+            <div class="bg-white p-9 rounded-2xl shadow-lg">
+                <div class="flex justify-between items-center mb-8 pb-5 border-b-2 border-gray-100">
+                    <div class="text-xl font-semibold text-gray-800">🛡️ Score de Sécurité Détaillé</div>
+                    <div class="text-3xl font-bold text-blue-600">85/100</div>
+                </div>
+
+                <div class="flex flex-col gap-5">
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="text-sm text-gray-700 font-medium">✅ Mot de passe fort</div>
+                            <div class="flex items-center gap-3">
+                                <div class="text-lg font-bold">20</div>
+                                <div class="text-sm text-gray-500">/ 20</div>
+                            </div>
+                        </div>
+                        <div class="w-full h-2 bg-gray-200 rounded-full">
+                            <div class="h-full bg-green-500 rounded-full" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="text-sm text-gray-700 font-medium">❌ Authentification 2FA</div>
+                            <div class="flex items-center gap-3">
+                                <div class="text-lg font-bold">0</div>
+                                <div class="text-sm text-gray-500">/ 25</div>
+                            </div>
+                        </div>
+                        <div class="w-full h-2 bg-gray-200 rounded-full">
+                            <div class="h-full bg-red-500 rounded-full" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="text-sm text-gray-700 font-medium">✅ Email vérifié</div>
+                            <div class="flex items-center gap-3">
+                                <div class="text-lg font-bold">15</div>
+                                <div class="text-sm text-gray-500">/ 15</div>
+                            </div>
+                        </div>
+                        <div class="w-full h-2 bg-gray-200 rounded-full">
+                            <div class="h-full bg-green-500 rounded-full" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="text-sm text-gray-700 font-medium">⚠️ Email de secours</div>
+                            <div class="flex items-center gap-3">
+                                <div class="text-lg font-bold">0</div>
+                                <div class="text-sm text-gray-500">/ 10</div>
+                            </div>
+                        </div>
+                        <div class="w-full h-2 bg-gray-200 rounded-full">
+                            <div class="h-full bg-yellow-500 rounded-full" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="text-sm text-gray-700 font-medium">✅ Alertes activées</div>
+                            <div class="flex items-center gap-3">
+                                <div class="text-lg font-bold">15</div>
+                                <div class="text-sm text-gray-500">/ 15</div>
+                            </div>
+                        </div>
+                        <div class="w-full h-2 bg-gray-200 rounded-full">
+                            <div class="h-full bg-green-500 rounded-full" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="text-sm text-gray-700 font-medium">✅ Changement mot de passe récent</div>
+                            <div class="flex items-center gap-3">
+                                <div class="text-lg font-bold">10</div>
+                                <div class="text-sm text-gray-500">/ 10</div>
+                            </div>
+                        </div>
+                        <div class="w-full h-2 bg-gray-200 rounded-full">
+                            <div class="h-full bg-green-500 rounded-full" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="text-sm text-gray-700 font-medium">✅ Sessions gérées</div>
+                            <div class="flex items-center gap-3">
+                                <div class="text-lg font-bold">5</div>
+                                <div class="text-sm text-gray-500">/ 5</div>
+                            </div>
+                        </div>
+                        <div class="w-full h-2 bg-gray-200 rounded-full">
+                            <div class="h-full bg-green-500 rounded-full" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECURITY EVENTS TABLE -->
+        <div class="bg-white p-9 rounded-2xl shadow-lg mb-8">
+            <div class="flex justify-between items-center mb-8 pb-5 border-b-2 border-gray-100">
+                <div class="text-xl font-semibold text-gray-800">🔔 Événements de Sécurité Récents</div>
+                <a href="journal-activite.html" class="text-blue-600 text-sm font-semibold hover:underline">Voir Tout →</a>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-4 py-4 text-left text-xs font-semibold text-gray-600 border-b-2 border-gray-200">Événement</th>
+                            <th class="px-4 py-4 text-left text-xs font-semibold text-gray-600 border-b-2 border-gray-200">Date & Heure</th>
+                            <th class="px-4 py-4 text-left text-xs font-semibold text-gray-600 border-b-2 border-gray-200">Appareil</th>
+                            <th class="px-4 py-4 text-left text-xs font-semibold text-gray-600 border-b-2 border-gray-200">Localisation</th>
+                            <th class="px-4 py-4 text-left text-xs font-semibold text-gray-600 border-b-2 border-gray-200">Statut</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-4 py-4 text-sm border-b border-gray-100">
+                                <div class="flex items-center gap-2 font-medium">
+                                    <span class="text-lg">✅</span>
+                                    Connexion réussie
+                                </div>
+                            </td>
+                            <td class="px-4 py-4 text-sm border-b border-gray-100">16 Nov 2025, 14:35</td>
+                            <td class="px-4 py-4 text-sm border-b border-gray-100">Windows - Chrome</td>
+                            <td class="px-4 py-4 text-sm border-b border-gray-100">📍 Tunis, TN</td>
+                            <td class="px-4 py-4 text-sm border-b border-gray-100">
+                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-xl text-xs font-semibold">Succès</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-4 py-4 text-sm border-b border-gray-100">
+                                <div class="flex items-center gap-2 font-medium">
+                                    <span class="text-lg">📊</span>
+                                    Consultation notes
+                                </div>
+                            </td>
+                            <td class="px-4 py-4 text-sm border-b border-gray-100">16 Nov 2025, 13:20</td>
+                            <td class="px-4 py-4 text-sm border-b border-gray-100">Windows - Chrome</td>
+                            <td class="px-4 py-4 text-sm border-b border-gray-100">📍 Tunis, TN</td>
+                            <td class="px-4 py-4 text-sm border-b border-gray-100">
+                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-xl text-xs font-semibold">Succès</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-4 py-4 text-sm border-b border-gray-100">
+                                <div class="flex items-center gap-2 font-medium">
+                                    <span class="text-lg">✅</span>
+                                    Connexion réussie
+                                </div>
+                            </td>
+                            <td class="px-4 py-4 text-sm border-b border-gray-100">15 Nov 2025, 18:22</td>
+                            <td class="px-4 py-4 text-sm border-b border-gray-100">iPhone - Safari</td>
+                            <td class="px-4 py-4 text-sm border-b border-gray-100">📍 Tunis, TN</td>
+                            <td class="px-4 py-4 text-sm border-b border-gray-100">
+                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-xl text-xs font-semibold">Succès</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- RECOMMENDATION CARD -->
+        <div class="bg-gradient-to-br from-yellow-100 to-yellow-200 border-l-4 border-yellow-500 p-6 rounded-xl mb-8">
+            <div class="text-lg font-semibold text-yellow-800 mb-4 flex items-center gap-2">
+                💡 Recommandations de Sécurité
+            </div>
+            <ul class="flex flex-col gap-3">
+                <li class="flex items-start gap-2 text-yellow-800 text-sm">
+                    <span class="font-bold flex-shrink-0">→</span>
+                    <span>Activez l'authentification à deux facteurs pour augmenter votre score de sécurité à 100%</span>
+                </li>
+                <li class="flex items-start gap-2 text-yellow-800 text-sm">
+                    <span class="font-bold flex-shrink-0">→</span>
+                    <span>Ajoutez un email de secours pour faciliter la récupération de votre compte</span>
+                </li>
+                <li class="flex items-start gap-2 text-yellow-800 text-sm">
+                    <span class="font-bold flex-shrink-0">→</span>
+                    <span>Vérifiez régulièrement vos sessions actives et révoquezles appareils non reconnus</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- NAVIGATION BUTTONS -->
+        <div class="flex gap-5 justify-center flex-wrap">
+            <a href="centre-securite.html" class="px-7 py-3 bg-white text-blue-600 border-2 border-blue-600 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition">
+                ← Retour au Centre de Sécurité
+            </a>
+            <a href="journal-activite.html" class="px-7 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 hover:-translate-y-1 hover:shadow-xl transition">
+                📋 Voir le Journal d'Activité →
+            </a>
+        </div>
+    </main>
+ <!-- FOOTER SECTION - REPLACE THIS --> 
+    <footer class="bg-[#2F75C0] text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Info Section -->
+                <div class="space-y-4">
+                    <div class="w-16 h-16  rounded-lg flex items-center justify-center">
+                        <img src="./assets/images/whitbg.png" alt="Campus Logo" class="h-12 w-auto">
+                    </div>
+                    <div class="text-sm opacity-90">
+                        <p> 2025 e-Campus</p>
+                        <p>El Ghazala Technopark,</p>
+                        <p>Ariana, Tunisia</p>
+                        <p class="mt-2">+216 70 250 000  <a href="mailto:scolarite@esprit.tn" class="hover:underline">scolarite@esprit.tn</a></p>
+                    </div>
+                </div>
+                <!-- Quick Links Section -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick links</h3> 
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="#" class="hover:underline hover:opacity-100">Dashboard</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Documents</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Meetings</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">About</a></li>
+                    </ul>
+                </div>
+                <!-- Resources Section -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="#" class="hover:underline hover:opacity-100">Brochure</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">FAQs</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Support</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Blog</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="#" class="hover:underline hover:opacity-100">LinkedIn</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Twitter</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Instagram</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+

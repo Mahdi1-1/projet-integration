@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Campus - Sélectionner une date</title>
+    <!-- Inclure le script CDN de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-bold">E</div>
+                <span class="text-blue-600 font-bold text-lg">E-CAMPUS</span>
+            </div>
+            <nav class="hidden md:flex gap-8">
+                <a href="C:\Users\21693\Downloads\integration web\gitmainn\besoin3\fiabilite-confiance.html" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition">Dashboard</a>
+                <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition">Documents</a>
+                <a href="C:\Users\21693\Downloads\integration web\gitmainn\besoin2\feed.html" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition">Forum</a> 
+                <a href="#" class="text-gray-800 hover:text-blue-600 text-sm font-medium transition">À propos</a>
+            </nav>
+            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center cursor-pointer text-lg">👤</div>
+        </div>
+    </header>
+
+
+ <!--  Main Content  -->
+ <!-- MAIN CONTENT -->
+    <main class="max-w-6xl mx-auto px-10 py-10">
+        <div class="mb-10">
+            <h1 class="text-4xl font-bold text-gray-800 mb-3">📋 Journal d'Activité</h1>
+            <p class="text-gray-500">Consultez l'historique complet de toutes vos actions sur le portail avec traçabilité totale</p>
+        </div>
+
+        <!-- FILTERS -->
+        <div class="bg-white p-6 rounded-xl shadow-md mb-8">
+            <div class="flex gap-4 flex-wrap items-center mb-4">
+                <span class="font-semibold text-gray-700 text-sm">Filtrer par:</span>
+                <div class="flex gap-2 flex-wrap flex-1">
+                    <div class="px-5 py-2 bg-blue-600 text-white rounded-full cursor-pointer text-xs font-semibold">Tous</div>
+                    <div class="px-5 py-2 border-2 border-gray-300 bg-white text-gray-500 rounded-full cursor-pointer text-xs font-semibold hover:border-blue-600 hover:text-blue-600 transition">🔐 Connexions</div>
+                    <div class="px-5 py-2 border-2 border-gray-300 bg-white text-gray-500 rounded-full cursor-pointer text-xs font-semibold hover:border-blue-600 hover:text-blue-600 transition">📊 Notes</div>
+                    <div class="px-5 py-2 border-2 border-gray-300 bg-white text-gray-500 rounded-full cursor-pointer text-xs font-semibold hover:border-blue-600 hover:text-blue-600 transition">💬 Messages</div>
+                    <div class="px-5 py-2 border-2 border-gray-300 bg-white text-gray-500 rounded-full cursor-pointer text-xs font-semibold hover:border-blue-600 hover:text-blue-600 transition">📄 Documents</div>
+                    <div class="px-5 py-2 border-2 border-gray-300 bg-white text-gray-500 rounded-full cursor-pointer text-xs font-semibold hover:border-blue-600 hover:text-blue-600 transition">⚙️ Paramètres</div>
+                    <div class="px-5 py-2 border-2 border-gray-300 bg-white text-gray-500 rounded-full cursor-pointer text-xs font-semibold hover:border-blue-600 hover:text-blue-600 transition">💳 Paiements</div>
+                </div>
+            </div>
+            <div class="flex items-center bg-gray-50 border-2 border-gray-300 rounded-full px-5 py-2 mt-4">
+                <span class="text-gray-500">🔍</span>
+                <input type="text" class="border-none bg-transparent outline-none text-sm flex-1 px-3" placeholder="Rechercher dans l'historique...">
+            </div>
+        </div>
+
+        <!-- TIMELINE -->
+        <div class="bg-white p-9 rounded-xl shadow-md">
+            <!-- TODAY -->
+            <div class="mb-10">
+                <div class="text-lg font-semibold text-gray-800 mb-6 pb-3 border-b-2 border-gray-200 flex items-center gap-2">
+                    📅 Aujourd'hui - 16 Novembre 2025
+                </div>
+                <div class="relative pl-12 border-l-4 border-gray-200 ml-6">
+                    <!-- Activity Item 1 -->
+                    <div class="relative bg-gray-50 p-6 rounded-xl mb-5 border-l-4 border-transparent hover:bg-white hover:border-blue-600 hover:shadow-lg hover:translate-x-1 transition-all before:content-[''] before:absolute before:left-[-50px] before:top-7 before:w-5 before:h-5 before:rounded-full before:bg-white before:border-4 before:border-blue-600">
+                        <div class="flex gap-4">
+                            <div class="w-11 h-11 bg-green-100 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">🔐</div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start mb-3">
+                                    <div class="font-semibold text-gray-800">Connexion Réussie</div>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-xl text-xs font-semibold">Succès</span>
+                                </div>
+                                <div class="text-gray-600 text-sm mb-3">
+                                    Vous vous êtes connecté depuis un navigateur Windows - Google Chrome
+                                </div>
+                                <div class="flex gap-5 text-xs text-gray-400 flex-wrap">
+                                    <span class="flex items-center gap-1">🕐 14:35</span>
+                                    <span class="flex items-center gap-1">📍 Tunis, Tunisie</span>
+                                    <span class="flex items-center gap-1">💻 IP: 197.15.xxx.xxx</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Item 2 -->
+                    <div class="relative bg-gray-50 p-6 rounded-xl mb-5 border-l-4 border-transparent hover:bg-white hover:border-blue-600 hover:shadow-lg hover:translate-x-1 transition-all before:content-[''] before:absolute before:left-[-50px] before:top-7 before:w-5 before:h-5 before:rounded-full before:bg-white before:border-4 before:border-blue-600">
+                        <div class="flex gap-4">
+                            <div class="w-11 h-11 bg-blue-100 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">📊</div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start mb-3">
+                                    <div class="font-semibold text-gray-800">Consultation des Notes</div>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-xl text-xs font-semibold">Consultation</span>
+                                </div>
+                                <div class="text-gray-600 text-sm mb-3">
+                                    Vous avez consulté vos notes de Mathématiques - Contrôle du 15 Novembre 2025
+                                </div>
+                                <div class="flex gap-5 text-xs text-gray-400 flex-wrap">
+                                    <span class="flex items-center gap-1">🕐 13:20</span>
+                                    <span class="flex items-center gap-1">📚 UE: Mathématiques Avancées</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Item 3 -->
+                    <div class="relative bg-gray-50 p-6 rounded-xl mb-5 border-l-4 border-transparent hover:bg-white hover:border-blue-600 hover:shadow-lg hover:translate-x-1 transition-all before:content-[''] before:absolute before:left-[-50px] before:top-7 before:w-5 before:h-5 before:rounded-full before:bg-white before:border-4 before:border-blue-600">
+                        <div class="flex gap-4">
+                            <div class="w-11 h-11 bg-yellow-100 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">💬</div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start mb-3">
+                                    <div class="font-semibold text-gray-800">Message Envoyé</div>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-xl text-xs font-semibold">Envoyé</span>
+                                </div>
+                                <div class="text-gray-600 text-sm mb-3">
+                                    Vous avez envoyé un message au service scolarité concernant une attestation de scolarité
+                                </div>
+                                <div class="flex gap-5 text-xs text-gray-400 flex-wrap">
+                                    <span class="flex items-center gap-1">🕐 11:45</span>
+                                    <span class="flex items-center gap-1">📧 Destinataire: scolarite@esprit.tn</span>
+                                    <span class="flex items-center gap-1">✅ Message lu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Item 4 -->
+                    <div class="relative bg-gray-50 p-6 rounded-xl mb-5 border-l-4 border-transparent hover:bg-white hover:border-blue-600 hover:shadow-lg hover:translate-x-1 transition-all before:content-[''] before:absolute before:left-[-50px] before:top-7 before:w-5 before:h-5 before:rounded-full before:bg-white before:border-4 before:border-blue-600">
+                        <div class="flex gap-4">
+                            <div class="w-11 h-11 bg-gray-200 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">📄</div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start mb-3">
+                                    <div class="font-semibold text-gray-800">Téléchargement de Document</div>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-xl text-xs font-semibold">Téléchargé</span>
+                                </div>
+                                <div class="text-gray-600 text-sm mb-3">
+                                    Vous avez téléchargé votre relevé de notes du semestre 1 - Année 2024/2025
+                                </div>
+                                <div class="flex gap-5 text-xs text-gray-400 flex-wrap">
+                                    <span class="flex items-center gap-1">🕐 10:15</span>
+                                    <span class="flex items-center gap-1">📦 Taille: 2.3 MB</span>
+                                    <span class="flex items-center gap-1">📑 Format: PDF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- YESTERDAY -->
+            <div class="mb-10">
+                <div class="text-lg font-semibold text-gray-800 mb-6 pb-3 border-b-2 border-gray-200 flex items-center gap-2">
+                    📅 Hier - 15 Novembre 2025
+                </div>
+                <div class="relative pl-12 border-l-4 border-gray-200 ml-6">
+                    <!-- Activity Item 1 -->
+                    <div class="relative bg-gray-50 p-6 rounded-xl mb-5 border-l-4 border-transparent hover:bg-white hover:border-blue-600 hover:shadow-lg hover:translate-x-1 transition-all before:content-[''] before:absolute before:left-[-50px] before:top-7 before:w-5 before:h-5 before:rounded-full before:bg-white before:border-4 before:border-blue-600">
+                        <div class="flex gap-4">
+                            <div class="w-11 h-11 bg-green-100 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">🔐</div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start mb-3">
+                                    <div class="font-semibold text-gray-800">Connexion Réussie</div>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-xl text-xs font-semibold">Succès</span>
+                                </div>
+                                <div class="text-gray-600 text-sm mb-3">
+                                    Connexion depuis iPhone - Safari
+                                </div>
+                                <div class="flex gap-5 text-xs text-gray-400 flex-wrap">
+                                    <span class="flex items-center gap-1">🕐 18:22</span>
+                                    <span class="flex items-center gap-1">📍 Tunis, Tunisie</span>
+                                    <span class="flex items-center gap-1">📱 IP: 197.15.xxx.xxx</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Item 2 -->
+                    <div class="relative bg-gray-50 p-6 rounded-xl mb-5 border-l-4 border-transparent hover:bg-white hover:border-blue-600 hover:shadow-lg hover:translate-x-1 transition-all before:content-[''] before:absolute before:left-[-50px] before:top-7 before:w-5 before:h-5 before:rounded-full before:bg-white before:border-4 before:border-blue-600">
+                        <div class="flex gap-4">
+                            <div class="w-11 h-11 bg-cyan-100 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">💳</div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start mb-3">
+                                    <div class="font-semibold text-gray-800">Consultation de Paiement</div>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-xl text-xs font-semibold">Consultation</span>
+                                </div>
+                                <div class="text-gray-600 text-sm mb-3">
+                                    Vous avez consulté l'état de vos paiements - Frais de scolarité 2024/2025
+                                </div>
+                                <div class="flex gap-5 text-xs text-gray-400 flex-wrap">
+                                    <span class="flex items-center gap-1">🕐 15:30</span>
+                                    <span class="flex items-center gap-1">💰 Montant consulté: 3500 TND</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Item 3 -->
+                    <div class="relative bg-gray-50 p-6 rounded-xl mb-5 border-l-4 border-transparent hover:bg-white hover:border-blue-600 hover:shadow-lg hover:translate-x-1 transition-all before:content-[''] before:absolute before:left-[-50px] before:top-7 before:w-5 before:h-5 before:rounded-full before:bg-white before:border-4 before:border-blue-600">
+                        <div class="flex gap-4">
+                            <div class="w-11 h-11 bg-gray-200 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">📄</div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start mb-3">
+                                    <div class="font-semibold text-gray-800">Demande d'Attestation</div>
+                                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-xl text-xs font-semibold">En Attente</span>
+                                </div>
+                                <div class="text-gray-600 text-sm mb-3">
+                                    Demande d'attestation de scolarité - Traitement en cours par le service administratif
+                                </div>
+                                <div class="flex gap-5 text-xs text-gray-400 flex-wrap">
+                                    <span class="flex items-center gap-1">🕐 14:10</span>
+                                    <span class="flex items-center gap-1">📋 Référence: ATT-2025-001234</span>
+                                    <span class="flex items-center gap-1">⏱️ Délai estimé: 48h</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 DAYS AGO -->
+            <div class="mb-10">
+                <div class="text-lg font-semibold text-gray-800 mb-6 pb-3 border-b-2 border-gray-200 flex items-center gap-2">
+                    📅 13 Novembre 2025
+                </div>
+                <div class="relative pl-12 border-l-4 border-gray-200 ml-6">
+                    <!-- Activity Item 1 -->
+                    <div class="relative bg-gray-50 p-6 rounded-xl mb-5 border-l-4 border-transparent hover:bg-white hover:border-blue-600 hover:shadow-lg hover:translate-x-1 transition-all before:content-[''] before:absolute before:left-[-50px] before:top-7 before:w-5 before:h-5 before:rounded-full before:bg-white before:border-4 before:border-blue-600">
+                        <div class="flex gap-4">
+                            <div class="w-11 h-11 bg-red-100 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">⚙️</div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start mb-3">
+                                    <div class="font-semibold text-gray-800">Modification du Profil</div>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-xl text-xs font-semibold">Modifié</span>
+                                </div>
+                                <div class="text-gray-600 text-sm mb-3">
+                                    Vous avez mis à jour votre numéro de téléphone et votre adresse email de secours
+                                </div>
+                                <div class="flex gap-5 text-xs text-gray-400 flex-wrap">
+                                    <span class="flex items-center gap-1">🕐 16:40</span>
+                                    <span class="flex items-center gap-1">📍 Tunis, Tunisie</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Item 2 -->
+                    <div class="relative bg-gray-50 p-6 rounded-xl mb-5 border-l-4 border-transparent hover:bg-white hover:border-blue-600 hover:shadow-lg hover:translate-x-1 transition-all before:content-[''] before:absolute before:left-[-50px] before:top-7 before:w-5 before:h-5 before:rounded-full before:bg-white before:border-4 before:border-blue-600">
+                        <div class="flex gap-4">
+                            <div class="w-11 h-11 bg-green-100 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">🔐</div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start mb-3">
+                                    <div class="font-semibold text-gray-800">Tentative de Connexion Échouée</div>
+                                    <span class="px-3 py-1 bg-red-100 text-red-800 rounded-xl text-xs font-semibold">Échec</span>
+                                </div>
+                                <div class="text-gray-600 text-sm mb-3">
+                                    Tentative de connexion avec un mot de passe incorrect depuis un appareil inconnu
+                                </div>
+                                <div class="flex gap-5 text-xs text-gray-400 flex-wrap">
+                                    <span class="flex items-center gap-1">🕐 03:15</span>
+                                    <span class="flex items-center gap-1">📍 Localisation: Inconnue</span>
+                                    <span class="flex items-center gap-1">⚠️ Action: Compte temporairement verrouillé</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Item 3 -->
+                    <div class="relative bg-gray-50 p-6 rounded-xl mb-5 border-l-4 border-transparent hover:bg-white hover:border-blue-600 hover:shadow-lg hover:translate-x-1 transition-all before:content-[''] before:absolute before:left-[-50px] before:top-7 before:w-5 before:h-5 before:rounded-full before:bg-white before:border-4 before:border-blue-600">
+                        <div class="flex gap-4">
+                            <div class="w-11 h-11 bg-blue-100 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">📊</div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-start mb-3">
+                                    <div class="font-semibold text-gray-800">Inscription aux Examens</div>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-xl text-xs font-semibold">Confirmée</span>
+                                </div>
+                                <div class="text-gray-600 text-sm mb-3">
+                                    Vous vous êtes inscrit aux examens du semestre 1 - Session Principale
+                                </div>
+                                <div class="flex gap-5 text-xs text-gray-400 flex-wrap">
+                                    <span class="flex items-center gap-1">🕐 09:25</span>
+                                    <span class="flex items-center gap-1">📚 5 matières inscrites</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXPORT SECTION -->
+        <div class="bg-white p-8 rounded-xl shadow-md mt-8 text-center">
+            <div class="text-lg font-semibold mb-4 text-gray-800">📥 Exporter le Journal d'Activité</div>
+            <div class="text-gray-500 text-sm mb-6">
+                Téléchargez l'historique complet de vos activités pour vos archives personnelles
+            </div>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <button class="px-7 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 hover:-translate-y-1 hover:shadow-xl transition">
+                    📄 Exporter en PDF
+                </button>
+                <button class="px-7 py-3 bg-white text-blue-600 border-2 border-blue-600 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition">
+                    📊 Exporter en CSV
+                </button>
+                <button class="px-7 py-3 bg-white text-blue-600 border-2 border-blue-600 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition">
+                    📧 Envoyer par Email
+                </button>
+            </div>
+        </div>
+
+        <!-- NAVIGATION BUTTONS -->
+        <div class="flex gap-5 justify-center mt-10 flex-wrap">
+            <a href="centre-securite.html" class="px-7 py-3 bg-white text-blue-600 border-2 border-blue-600 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition">
+                ← Retour au Centre de Sécurité
+            </a>
+            <a href="stats-securite.html" class="px-7 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 hover:-translate-y-1 hover:shadow-xl transition">
+                📊 Voir Statistiques →
+            </a>
+        </div>
+    </main>
+ <!-- FOOTER SECTION - REPLACE THIS --> 
+    <footer class="bg-[#2F75C0] text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Info Section -->
+                <div class="space-y-4">
+                    <div class="w-16 h-16  rounded-lg flex items-center justify-center">
+                        <img src="./assets/images/whitbg.png" alt="Campus Logo" class="h-12 w-auto">
+                    </div>
+                    <div class="text-sm opacity-90">
+                        <p> 2025 e-Campus</p>
+                        <p>El Ghazala Technopark,</p>
+                        <p>Ariana, Tunisia</p>
+                        <p class="mt-2">+216 70 250 000  <a href="mailto:scolarite@esprit.tn" class="hover:underline">scolarite@esprit.tn</a></p>
+                    </div>
+                </div>
+                <!-- Quick Links Section -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick links</h3> 
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="#" class="hover:underline hover:opacity-100">Dashboard</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Documents</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Meetings</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">About</a></li>
+                    </ul>
+                </div>
+                <!-- Resources Section -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="#" class="hover:underline hover:opacity-100">Brochure</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">FAQs</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Support</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Blog</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="#" class="hover:underline hover:opacity-100">LinkedIn</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Twitter</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Instagram</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
