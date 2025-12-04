@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail du Service de Scolarité</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-custom-blue { background-color: #2F75C0; }
+        .hover\:bg-custom-blue:hover { background-color: #2F75C0; }
+        .bg-custom-blue-dark { background-color: #265d9d; }
+        .hover\:bg-custom-blue-dark:hover { background-color: #265d9d; }
+        .text-custom-blue { color: #2F75C0; }
+        .hover\:text-custom-blue:hover { color: #2F75C0; }
+        .border-custom-blue { border-color: #2F75C0; }
+        .hover\:border-custom-blue:hover { border-color: #2F75C0; }
+    </style>
+</head>
+<body class="bg-gray-50">
+     <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="#" class="flex items-center group">
+                    <img src="./assets/images/logoblue2.png" alt="Campus Logo" class="h-12 w-auto group-hover:hidden">
+                    <img src="./assets/images/logopblck.png" alt="Campus Logo Hover" class="h-12 w-auto hidden group-hover:block">
+                </a>
+                    <!-- Navigation -->
+                    <nav class="hidden md:flex items-center gap-2">
+                    <a href="#" class="px-6 py-2 bg-[#2F75C0] text-white rounded-md hover:bg-[#2663A6] transition">Dashboard</a>
+                    <a href="./besoin1/Home.html" class="px-6 py-2 text-gray-900 hover:bg-[#2F75C0] hover:text-white rounded-md transition">Documents</a>
+                    <a href="#" class="px-6 py-2 text-gray-900 hover:bg-[#2F75C0] hover:text-white rounded-md transition">Meetings</a>
+                    <a href="./about.html" class="px-6 py-2 text-gray-900 hover:bg-[#2F75C0] hover:text-white rounded-md transition">About</a>
+                    </nav>
+
+                <!-- User Icon -->
+                <div class="hidden md:block">
+                    
+                        <a href="#" class="flex items-center group">
+                            <img src="./assets/images/userbl.png" alt="Campus Logo" class="h-12 w-auto group-hover:hidden">
+                            <img src="./assets/images/userb.png" alt="Campus Logo Hover" class="h-12 w-auto hidden group-hover:block">
+                        </a>
+                    
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="bg-white py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold italic text-gray-900 mb-6">Portail du Service<br>de Scolarité.</h1>
+                    <p class="text-gray-600 mb-8">Accédez aux services administratifs, aux inscriptions, aux emplois du temps et aux documents officiels. Une plateforme dédiée aux étudiants et au personnel d'ESPRIT.</p>
+                    <div class="flex gap-4">
+                        <button class="bg-custom-blue text-white px-6 py-3 rounded-md font-semibold hover:bg-black transition">Get Started</button>
+                        <button class="bg-white text-custom-blue px-6 py-3 rounded-md font-semibold border-2 border-custom-blue hover:bg-gray-50 transition">Learn More</button>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="./assets/images/FA.png" alt="Dashboard" class="w-full max-w-md rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inscription & Réinscription Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold italic text-gray-900 mb-4">Inscription & Réinscription</h2>
+                <p class="text-gray-600">Modalités, pièces requises, calendrier et étapes à suivre pour vous inscrire ou vous réinscrire.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                 <button class="bg-white hover:bg-custom-blue text-gray-900 hover:text-white rounded-2xl p-8 w-full text-center transition-all duration-300 shadow-sm hover:shadow-lg group">
+            <div class="flex flex-col items-center space-y-4">
+                <!-- Icon placeholder -->
+                <div class="w-16 h-16 flex items-center justify-center">
+                    
+                    <img src="./assets/images/checkbook_24dp_2F75C0_FILL0_wght400_GRAD0_opsz24.png" alt="Icon" class="h-12 w-auto group-hover:hidden">
+                    <img src="./assets/images/checkwhite.png" alt="Campus Logo Hover" class="h-12 w-auto hidden group-hover:block">
+                </div>
+                
+                <!-- Title -->
+                <h3 class="text-2xl font-semibold">Nouvelle Inscription</h3>
+                
+                <!-- Description -->
+                <p class="text-sm text-gray-600 group-hover:text-blue-100 transition-colors">
+                    Procédure pas à pas, formulaires à télécharger et règles d'admission par filière.
+                </p>
+            </div>
+        </button>
+                <div class="bg-white rounded-lg p-8 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-50 rounded-lg flex items-center justify-center">
+                        <svg class="w-8 h-8 text-custom-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Réinscription</h3>
+                    <p class="text-gray-600 text-sm">Réinscrivez-vous pour le nouvel semestre. Remplissez procédures et finalisation.</p>
+                </div>
+                <div class="bg-white rounded-lg p-8 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-50 rounded-lg flex items-center justify-center">
+                        <svg class="w-8 h-8 text-custom-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Paiement</h3>
+                    <p class="text-gray-600 text-sm">Consultez vos frais, suivez vos paiement, acquittez le reste des frais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examens & Résultats Section -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="./assets/images/ADDD.png" alt="Examens" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold italic text-gray-900 mb-4">Examens & Résultats</h2>
+                    <p class="text-gray-600 mb-8">Dates officielles, convocation, consultation des notes et relevés de résultats.</p>
+                    <div class="space-y-4">
+                        <div class="bg-custom-blue text-white rounded-lg p-6 flex items-center justify-between hover:bg-custom-blue-dark transition cursor-pointer">
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Planning</h3>
+                                <p class="text-sm text-blue-100">Calendrier des sessions d'examens par filière et période de l'année.</p>
+                            </div>
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="bg-custom-blue text-white rounded-lg p-6 flex items-center justify-between hover:bg-custom-blue-dark transition cursor-pointer">
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Résultats</h3>
+                                <p class="text-sm text-blue-100">Consultez vos notes, téléchargez vos relevés de notes officiels.</p>
+                            </div>
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emplois du Temps Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold italic text-gray-900 mb-4">Emplois du Temps</h2>
+                <p class="text-gray-600">Consultez en temps réel votre calendrier hebdomadaire et mensuel de séances et d'activités.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg p-8 flex items-center justify-between hover:shadow-lg transition cursor-pointer">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Consulter mon emploi</h3>
+                        <p class="text-gray-600 text-sm">Accédez au planning personnalisé et aux notifications en temps réel.</p>
+                    </div>
+                    <svg class="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+                <div class="bg-white rounded-lg p-8 flex items-center justify-between hover:shadow-lg transition cursor-pointer">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Disponibilité des salles</h3>
+                        <p class="text-gray-600 text-sm">Calendrier des salles disponibles par zone et niveau du bâtiment.</p>
+                    </div>
+                    <svg class="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4">
+                    <div class="bg-white border-2 border-gray-200 rounded-lg p-6 flex items-center justify-between hover:border-custom-blue transition cursor-pointer">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-1">Attestation de Scolarité</h3>
+                            <p class="text-gray-600 text-sm">Demandez en ligne et téléchargement instantané après validation.</p>
+                        </div>
+                        <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="bg-white border-2 border-gray-200 rounded-lg p-6 flex items-center justify-between hover:border-custom-blue transition cursor-pointer">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-1">Relevé de Notes</h3>
+                            <p class="text-gray-600 text-sm">Relevés officiels par semestre et par année universitaire.</p>
+                        </div>
+                        <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                        </svg>
+                    </div>
+                    <div class="bg-white border-2 border-gray-200 rounded-lg p-6 flex items-center justify-between hover:border-custom-blue transition cursor-pointer">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-1">Autres Documents</h3>
+                            <p class="text-gray-600 text-sm">Demandez tout autre type de documents après validation.</p>
+                        </div>
+                        <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/images/adddd.png" alt="Documents" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="bg-white py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                
+                <div class="flex justify-center">
+                    <img src="./assets/images/ADD.png" alt="Dashboard" class="w-full max-w-md rounded-lg">
+                </div>
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold italic text-gray-900 mb-6">Portail du Service<br>de Scolarité.</h1>
+                    <p class="text-gray-600 mb-8">Accédez aux services administratifs, aux inscriptions, aux emplois du temps et aux documents officiels. Une plateforme dédiée aux étudiants et au personnel d'ESPRIT.</p>
+                    <div class="flex gap-4">
+                        <button class="bg-custom-blue text-white px-6 py-3 rounded-md font-semibold hover:bg-black transition">Get Started</button>
+                        <button class="bg-white text-custom-blue px-6 py-3 rounded-md font-semibold border-2 border-custom-blue hover:bg-gray-50 transition">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION - REPLACE THIS -->
+    <footer class="bg-[#2F75C0] text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Info Section -->
+                <div class="space-y-4">
+                    <div class="w-16 h-16  rounded-lg flex items-center justify-center">
+                        <img src="./assets/images/whitbg.png" alt="Campus Logo" class="h-12 w-auto">
+                    </div>
+                    <div class="text-sm opacity-90">
+                        <p>© 2025 e-Campus</p>
+                        <p>El Ghazala Technopark,</p>
+                        <p>Ariana, Tunisia</p>
+                        <p class="mt-2">+216 70 250 000 • <a href="mailto:scolarite@esprit.tn" class="hover:underline">scolarite@esprit.tn</a></p>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick links</h3>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="#" class="hover:underline hover:opacity-100">Dashboard</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Documents</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Meetings</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">About</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Section -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="#" class="hover:underline hover:opacity-100">Brochure</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">FAQs</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Support</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="#" class="hover:underline hover:opacity-100">LinkedIn</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Twitter</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Instagram</a></li>
+                        <li><a href="#" class="hover:underline hover:opacity-100">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
